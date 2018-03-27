@@ -47,7 +47,7 @@ int main()
 			isPartActive = static_cast<bool>(collisions);			//single particle simmulation ends when particle disapates due to collisions OR
 			isInShield = partPos >= INNER_BOUND && partPos <= OUTER_BOUND;	//when particle escapes or re-enters the reactor. THESE CONTROL THE WHILE LOOP
 		}//End While
-		if (partPos > OUTER_BOUND)												//test if the end condition was caused by an escaped particle
+		if (partPos > OUTER_BOUND)						//test if the end condition was caused by an escaped particle
 			escapedParts++;
 	}//End For
 
